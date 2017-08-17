@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{684C919D-F926-4AC8-B4E6-A0C6DFBB6C87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XingRanAccountTest</RootNamespace>
+    <AssemblyName>XingRanAccountTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCS.Library, Version=1.2.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.1.2.0.0\lib\net40\MCS.Library.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.ADHelper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.ADHelper.1.0.0.0\lib\net40\MCS.Library.ADHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.Compression, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7c704e212d216b47, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.Compression.1.0.0.0\lib\net40\MCS.Library.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.Data, Version=1.3.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.Data.1.3.0.0\lib\net40\MCS.Library.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.Office, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.Office.1.0.0.0\lib\net40\MCS.Library.Office.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.Office.OpenXml.Excel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.Office.OpenXml.Excel.1.0.0.0\lib\net40\MCS.Library.Office.OpenXml.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.OGUPermission, Version=1.3.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.OGUPermission.1.3.0.0\lib\net40\MCS.Library.OGUPermission.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.Passport, Version=1.3.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.Passport.1.3.0.0\lib\net40\MCS.Library.Passport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.SOA.DataObjects, Version=1.4.1.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.SOA.DataObjects.1.4.1\lib\net40\MCS.Library.SOA.DataObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.SOA.DataObjects.Schemas.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.SOA.DataObjects.Schemas.Client.1.0.0.0\lib\net40\MCS.Library.SOA.DataObjects.Schemas.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.SOA.DataObjects.Security.AUClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.SOA.DataObjects.Security.AUClient.1.0.0.0\lib\net40\MCS.Library.SOA.DataObjects.Security.AUClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Library.WcfExtensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Library.WcfExtensions.1.0.0.0\lib\net40\MCS.Library.WcfExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Web.Library, Version=1.2.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Web.Library.1.2.0.0\lib\net40\MCS.Web.Library.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Web.Library.Script.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Web.Library.Script.Json.1.0.0.0\lib\net40\MCS.Web.Library.Script.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCS.Web.Responsive.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62ea08f894871798, processorArchitecture=MSIL">
+      <HintPath>..\XingRanAccount\packages\MCS.Web.Responsive.Library.1.0.0.0\lib\net40\MCS.Web.Responsive.Library.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="DataTableExtension.cs" />
+    <Compile Include="ExcelDo.cs" />
+    <Compile Include="Excel\ScopeEntity.cs" />
+    <Compile Include="Excel\SourceEntity.cs" />
+    <Compile Include="Excel\TargetEntity.cs" />
+    <Compile Include="MainTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Content Include="Excel\template.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\source.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

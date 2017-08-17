@@ -1,0 +1,11 @@
+.idea
+npm-debug.log
+/*/.vs
+/*/.bin
+/*/.obj
+/*/.user
+/*/.vs
+/*/bin
+/*/obj
+
+/*/.dist
